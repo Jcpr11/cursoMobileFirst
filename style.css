@@ -147,12 +147,21 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    scroll-snap-align: center;
+    margin: 0 25px;
     font-family: "Inter", sans-serif;
 }
 
@@ -255,7 +264,7 @@ main {
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 25px;
     font-family: "Inter", sans-serif;
 }
 
@@ -500,6 +509,7 @@ main {
 }
 
 /*Scroll horizontal*/
+
 .plans-container--slider {
     display: flex;
     height: 316px;
